@@ -25,3 +25,6 @@ function handleData(json) {
 		`
 	})
 }
+
+const apiSecret = import.meta.env.VITE_SECRET_PHRASE
+console.log(apiSecret)
