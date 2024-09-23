@@ -12,5 +12,7 @@ fetch(URL).then((res) => {
 })
 
 function handleData(json) {
-	console.log(json)
+	json.forEach((element) => {
+		console.log(element)
+	})
 }
