@@ -12,7 +12,16 @@ fetch(URL).then((res) => {
 })
 
 function handleData(json) {
-	json.forEach((element) => {
-		console.log(element)
+	json.forEach((user) => {
+		document.querySelector(".dynamic_data").innerHTML += `
+			<div class="col">
+				<artricle class="card">
+					<div class="card-body">
+						<p>${user.name}</p>
+						<p>${user.email}</p>
+					</div>
+				</artricle>
+			</div>
+		`
 	})
 }
